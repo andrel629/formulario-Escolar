@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Formulario.css">
+    
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <div class="container">
+        <form action="#" id="myForm">
+            <h2>Cadastro Aluno para o ForróCaju</h2>
+            <input type="text" name="nome" placeholder="Digite seu nome" id="nomeAluno">
+            <input type="text" name="sobrenome" placeholder="Digite seu sobrenome" id="sobrenomeAluno">
+            <input type="email" name="email" placeholder="Digite seu email" id="emailAluno">
+            <input type="number" name="idade" placeholder="Digite sua idade" id="idadeAluno">
+            <label for="escolaridade">Escolaridade:</label>
+            <select name="escolaridade" id="escolaridade">
+                <option value="" selected>Escolha um turno</option>
+                <option value="1° turno">1° turno</option>
+                <option value="2° turno">2° turno</option>
+                <option value="3° turno">3° turno</option>
+                <option value="4° turno">4° turno</option>
+            </select>
+            <label for="sexo">Sexo:</label>
+            <label>
+                <input type="radio" name="sexo" id="feminino">Feminino
+
+            </label>
+            <label>
+                <input type="radio" name="sexo" id="masculino">Masculino
+            </label>
+
+            <div class="turno">
+                <label for="turno">Turno:</label>
+                <label>
+                    <input type="checkbox" name="turno" value="manha">Manha
+                </label>
+                <label>
+                    <input type="checkbox" name="turno" value="Tarde">Tarde
+                </label>
+                <label>
+                    <input type="checkbox" name="turno" value="noite">Noite
+                </label>
+            </div>
+            <button type="submit" value="Cadastro" >Cadastrar</button>
+        </form>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
